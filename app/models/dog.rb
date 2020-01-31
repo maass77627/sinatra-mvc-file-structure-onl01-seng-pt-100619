@@ -14,4 +14,10 @@ end
     @@all
   end 
   
+  def self.create(attributes)
+  dog = Dog.new(name: attributes[:name], breed: attributes[:breed])
+  dog.save 
+  dog
+end 
+  
 end 
