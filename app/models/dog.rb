@@ -4,20 +4,13 @@ class Dog
   
   @@all = []
   
- def initialize(attributes)
-    attributes.each do |key, value|
-   self.send("#{key}=", value)
+ def initialize(name, )
+   
   end
 end 
   
   def self.all
     @@all
   end 
-  
-  def self.create(attributes)
-  dog = Dog.new(name: attributes[:name], breed: attributes[:breed])
-  dog.save 
-  dog
-end 
   
 end 
