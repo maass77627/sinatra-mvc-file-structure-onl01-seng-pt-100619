@@ -4,10 +4,11 @@ class Dog
   
   @@all = []
   
-  def initialize(attributes)
-  
+ def initialize(attributes)
+    attributes.each do |key, value|
+   self.send("#{key}=", value)
   end
-end
+end 
   
   def self.all
     @@all
